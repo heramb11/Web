@@ -1,0 +1,355 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: whitesmoke;
+    font-family: 'Space Grotesk', sans-serif;
+}
+header{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: #13274F;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+header > p{
+    color: white;
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+
+header > ul{
+    display: flex;
+    margin-top: -90px;
+    padding: 30px;
+    color: white;
+    list-style-type: none;
+}
+
+header > ul::after{    
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #fff;
+        transition: width 0.5s ease 0s, left 0.5s ease 0s;
+        width: 0;
+}
+
+header > ul:hover::after{
+    width: 100%; 
+    left: 0;  
+}
+header > ul > li{
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* li::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 10s ease-out;
+}
+li:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+} */
+.LogIn{
+    float: right;
+    width: 200px;
+    height: 50px;
+    margin-top: -90px;
+    margin-right: 30px;
+    color: black;
+    background-color: white;
+    font-family: 'Oswald', sans-serif;
+    border-width: 0;
+    border-radius: 50px;
+    border-style: initial;
+    box-shadow:  rgba(246, 246, 246, 0.04) 0 0 1px 0,rgba(246, 245, 245, 0.04) 0 3px 4px 0;
+    transition: all 0.5s;
+}
+.LogIn:hover{
+    transform: scale(1.05);
+}
+.LogIn ul{
+    margin-top: -30px;
+    font-size: 20px;
+    padding: 30px;
+    list-style-type: none;
+}
+
+.LogIn ul li{
+    cursor: pointer;
+    padding: 10px;
+}
+main .search{
+    width: 100%;
+
+}
+
+main .search input[type=text] {
+    margin: 100px 0px 10px 60px ;
+    width: 90%;
+    height: 50px;
+    border-radius: 100px;
+    position: relative;
+    text-align: left;
+    padding: 5px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-sizing: border-box;
+    transition:all 2s ease-in;
+    z-index: 1;
+}   
+
+main .search input[type=text]:focus{
+    border: 0px;
+    outline: solid tomato 2000px;
+}
+main .profile1{
+    display: flex;
+    margin: 100px 30px 30px 30px ;
+    background-color: white;
+    height: 200px;
+    /* border: 3px solid #13274F; */
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    position: relative;
+}
+
+main .profile1 img{
+    height: 180px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 100%;
+}
+main .profile1 h2{
+    height: 40px;
+    width:220px;
+    margin-top:18px;
+    margin-left: 20px;
+    color: #13274F;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+/* Verification Tick */
+
+main .profile1 .verify{
+    height: 30px;
+    margin-top: 20px;
+    margin-left:10px;
+}
+main .profile1 p{
+    height: 20px;
+    width:80px;
+    margin-top: 40px;
+    font-size: 10px;
+    opacity: 70%;
+}
+
+main .profile1 .para1{
+    width: 100%;
+    font-size: 16px;
+    margin-top: 70px;
+    margin-left: -280px;
+    white-space: wrap;
+}
+
+/*  Button */
+.btn{
+    background-color: black;
+}
+
+.btn button{
+    position: relative;
+    cursor: pointer;
+    float: right;
+    margin-top: -100px;
+    /* margin-left: 300px; */
+    margin-right: 100px;
+    width: 140px;
+    height: 40px;
+    font-size: 1.4rem;
+    color: black;
+    background-color: white;
+    font-family: 'Oswald', sans-serif;
+    border-width: 0;
+    border-radius: 50px;
+    border-style: initial;
+    box-shadow:  rgba(25, 25, 25, 0.04) 0 0 1px 0,rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+    transition: all 0.5s;
+}
+button:hover{
+    color: white;
+    background-color: #13274F;
+    transform: scale(1.05);
+}
+
+/* profile 2 */
+main .profile2{
+    display: flex;
+    margin: 50px 30px 30px 30px ;
+    background-color: white;
+    height: 200px;
+    /* border: 3px solid #13274F; */
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    position: absolute;
+}
+
+main .profile2 img{
+    height: 180px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 100%;
+}
+main .profile2 h2{
+    height: 40px;
+    width:240px;
+    margin-top:18px;
+    margin-left: 20px;
+    color: #13274F;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+/* Verification Tick */
+
+main .profile2 .verify{
+    height: 30px;
+    margin-top: 20px;
+    margin-left:10px;
+}
+main .profile2 p{
+    height: 20px;
+    width:80px;
+    margin-top: 40px;
+    font-size: 10px;
+    opacity: 70%;
+}
+
+main .profile2 .para2{
+    width: 100%;
+    font-size: 16px;
+    margin-top: 70px;
+    margin-left: -280px;
+    white-space: wrap;
+}
+
+/* button 2 */
+
+.btn2 button{
+    position: relative;
+    cursor: pointer;
+    float: right;
+    margin-top: 180px;
+    /* margin-left: 300px; */
+    margin-right: 100px;
+    width: 140px;
+    height: 40px;
+    font-size: 1.4rem;
+    color: black;
+    background-color: white;
+    font-family: 'Oswald', sans-serif;
+    border-width: 0;
+    border-radius: 50px;
+    border-style: initial;
+    box-shadow:  rgba(25, 25, 25, 0.04) 0 0 1px 0,rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+    transition: all 0.5s;
+}
+button:hover{
+    color: white;
+    background-color: #13274F;
+    transform: scale(1.05);
+}
+
+/* profile 3 */
+main .profile3{
+    display: flex;
+    margin: 340px 30px 30px 30px ;
+    background-color: white;
+    height: 200px;
+    /* border: 3px solid #13274F; */
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    position: absolute;
+}
+
+main .profile3 img{
+    height: 180px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 100%;
+}
+main .profile3 h2{
+    height: 40px;
+    width:240px;
+    margin-top:18px;
+    margin-left: 20px;
+    color: #13274F;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+/* Verification Tick */
+
+main .profile3 .verify{
+    height: 30px;
+    margin-top: 20px;
+    margin-left:10px;
+}
+main .profile3 p{
+    height: 20px;
+    width:80px;
+    margin-top: 40px;
+    font-size: 10px;
+    opacity: 70%;
+}
+
+main .profile3 .para3{
+    width: 100%;
+    font-size: 16px;
+    margin-top: 70px;
+    margin-left: -280px;
+    white-space: wrap;
+}
+
+/* button 2 */
+
+.btn3 button{
+    position: relative;
+    cursor: pointer;
+    float: right;
+    margin-top: 500px;
+    /* margin-left: 300px; */
+    margin-right: -150px;
+    width: 140px;
+    height: 40px;
+    font-size: 1.4rem;
+    color: black;
+    background-color: white;
+    font-family: 'Oswald', sans-serif;
+    border-width: 0;
+    border-radius: 50px;
+    border-style: initial;
+    box-shadow:  rgba(25, 25, 25, 0.04) 0 0 1px 0,rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+    transition: all 0.5s;
+}
+button:hover{
+    color: white;
+    background-color: #13274F;
+    transform: scale(1.05);
+}
